@@ -1,0 +1,9 @@
+Additional Credits and Information
+Voice files from Final Fantasy Dissidia NT, submitted to sounds-resource.com by user Mysticus
+All models extracted from Final Fantasy XIV via FFXIV TexTools
+
+Big thanks to the OpenKH discord community for helping me out of a few roadblocks.
+
+---
+
+I never want to rig a skirt ever again.

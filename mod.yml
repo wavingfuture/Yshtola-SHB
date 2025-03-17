@@ -1,0 +1,650 @@
+title: Y'shtola Shadowbringers ver.
+originalAuthor: wavingfuture
+description: Play the full game as Y'shtola from FFXIV, embracing darkness with her Night's Blessed robes!
+dependencies: 
+assets:
+# KH1 low poly
+- name: obj/P_EX120.mdlx
+  multi:
+  - name: obj/P_EX120_NPC_BLUE.mdlx
+  - name: obj/P_EX120_NPC_RED.mdlx
+  - name: obj/P_EX120_NPC_GREEN.mdlx
+  method: binarc
+  source:
+  - name: p_ex
+    type: model
+    method: copy
+    source:
+    - name: Model/KH1_LP.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Model/KH1_LP.texture
+# KH1 high poly
+- name: obj/H_EX790.mdlx
+  method: binarc
+  source:
+  - name: h_ex
+    type: model
+    method: copy
+    source:
+    - name: Model/KH1_HP.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Model/KH1_HP.texture
+# KH2 low poly
+- name: obj/ACTOR_SORA.mdlx
+  multi: 
+  - name: obj/AL14_PLAYER.mdlx
+  - name: obj/DEAD_BOSS.mdlx
+  - name: obj/LAST_ATTACKER.mdlx
+  - name: obj/LAST_GIMMICK.mdlx
+  - name: obj/LAST_HITMARK.mdlx
+  - name: obj/P_EX100.mdlx
+  - name: obj/P_EX100_BTLF.mdlx
+  - name: obj/P_EX100_KH1F.mdlx
+  - name: obj/P_EX100_MAGF.mdlx
+  - name: obj/P_EX100_TRIF.mdlx
+  - name: obj/P_EX100_ULTF.mdlx
+  - name: obj/P_EX100_HTLF.mdlx
+  - name: obj/P_EX100_HTLF_BTL.mdlx
+  - name: obj/P_EX100_NM.mdlx
+  - name: obj/P_EX100_NM_BTLF.mdlx
+  - name: obj/P_EX100_NM_HTLF.mdlx
+  - name: obj/P_EX100_NM_KH1F.mdlx
+  - name: obj/P_EX100_NM_MAGF.mdlx
+  - name: obj/P_EX100_NM_TRIF.mdlx
+  - name: obj/P_EX100_NM_ULTF.mdlx
+  - name: obj/P_EX100_TR.mdlx
+  - name: obj/P_EX100_TR_BTLF.mdlx
+  - name: obj/P_EX100_TR_HTLF.mdlx
+  - name: obj/P_EX100_TR_KH1F.mdlx
+  - name: obj/P_EX100_TR_MAGF.mdlx
+  - name: obj/P_EX100_TR_TRIF.mdlx
+  - name: obj/P_EX100_TR_ULTF.mdlx
+  - name: obj/P_EX100_WI.mdlx
+  - name: obj/P_EX100_WI_BTLF.mdlx
+  - name: obj/P_EX100_WI_HTLF.mdlx
+  - name: obj/P_EX100_WI_KH1F.mdlx
+  - name: obj/P_EX100_WI_MAGF.mdlx
+  - name: obj/P_EX100_WI_TRIF.mdlx
+  - name: obj/P_EX100_WI_ULTF.mdlx
+  - name: obj/P_EX100_XM.mdlx
+  - name: obj/P_EX100_XM_BTLF.mdlx
+  - name: obj/P_EX100_XM_HTLF.mdlx
+  - name: obj/P_EX100_XM_KH1F.mdlx
+  - name: obj/P_EX100_XM_MAGF.mdlx
+  - name: obj/P_EX100_XM_TRIF.mdlx
+  - name: obj/P_EX100_XM_ULTF.mdlx
+  - name: obj/P_EX100_AL_CARPET.mdlx
+  - name: obj/P_EX100_TR_LIGHTCYCLE.mdlx
+  - name: obj/P_EX100_LAST.mdlx
+  - name: obj/P_EX100_MEMO.mdlx
+  - name: obj/P_EX100_NPC.mdlx
+  - name: obj/P_EX100_SIDECAR.mdlx
+  - name: obj/P_EX100_WM.mdlx
+  - name: obj/PLAYER.mdlx
+  - name: obj/PO06_PLAYER.mdlx
+  - name: obj/PO07_PLAYER.mdlx
+  - name: obj/PO08_PLAYER.mdlx
+  - name: obj/TR_PLAYER.mdlx
+  - name: obj/WM_EX100.mdlx
+  method: binarc
+  source:
+  - name: p_ex
+    type: model
+    method: copy
+    source:
+    - name: Model/KH2_LP.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Model/KH2_LP.texture
+# Kh2 high poly
+- name: obj/H_EX500.mdlx
+  multi: 
+  - name: obj/H_EX501.mdlx
+  - name: obj/H_EX500_XM_ULTF.mdlx
+  - name: obj/H_EX500_XM_TRIF.mdlx
+  - name: obj/H_EX500_XM_MAGF.mdlx
+  - name: obj/H_EX500_XM_KH1F.mdlx
+  - name: obj/H_EX500_XM_BTLF.mdlx
+  - name: obj/H_EX500_XM.mdlx
+  - name: obj/H_EX500_ULTF.mdlx
+  - name: obj/H_EX500_TRIF.mdlx
+  - name: obj/H_EX500_MAGF.mdlx
+  - name: obj/H_EX500_KH1F.mdlx
+  - name: obj/H_EX500_BTLF.mdlx
+  - name: obj/H_EX500_NM_ULTF.mdlx
+  - name: obj/H_EX500_NM_TRIF.mdlx
+  - name: obj/H_EX500_NM_MAGF.mdlx
+  - name: obj/H_EX500_NM_KH1F.mdlx
+  - name: obj/H_EX500_NM_BTLF.mdlx
+  - name: obj/H_EX500_NM.mdlx
+  - name: obj/H_EX500_TR_ULTF.mdlx
+  - name: obj/H_EX500_TR_TRIF.mdlx
+  - name: obj/H_EX500_TR_MAGF.mdlx
+  - name: obj/H_EX500_TR_KH1F.mdlx
+  - name: obj/H_EX500_TR_BTLF.mdlx
+  - name: obj/H_EX500_TR.mdlx
+  method: binarc
+  source:
+  - name: h_ex
+    type: model
+    method: copy
+    source:
+    - name: Model/KH2_HP.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Model/KH2_HP.texture
+# Pridelands low poly
+- name: obj/P_LK100.mdlx
+  method: binarc
+  source:
+  - name: p_lk
+    type: model
+    method: copy
+    source:
+    - name: Model/PL_LP.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Model/PL_LP.texture
+# Pridelands high poly
+- name: obj/H_EX640.mdlx
+  method: binarc
+  source:
+  - name: h_ex
+    type: model
+    method: copy
+    source:
+    - name: Model/PL_HP.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Model/PL_HP.texture
+# Atlantica low poly
+- name: obj/P_LM100.mdlx
+  method: binarc
+  source:
+  - name: p_lm
+    type: model
+    method: copy
+    source:
+    - name: Model/AT_LP.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Model/AT_LP.texture
+# Altlantica high poly
+- name: obj/H_EX630.mdlx
+  method: binarc
+  source:
+  - name: h_ex
+    type: model
+    method: copy
+    source:
+    - name: Model/AT_HP.model
+  - name: tim_
+    type: modeltexture
+    method: copy
+    source:
+    - name: Model/AT_HP.texture
+# TEXTURES
+# KH1 Sora textures
+- name: remastered/obj/P_EX120.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/H_EX790.mdlx/-0.dds
+  method: copy
+  source:
+  - name: Texture/KH1/1.png
+- name: remastered/obj/P_EX120_NPC_BLUE.mdlx/-0.dds
+  method: copy
+  source:
+  - name: Texture/KH1/BLUE.png
+- name: remastered/obj/P_EX120_NPC_RED.mdlx/-0.dds
+  method: copy
+  source:
+  - name: Texture/KH1/RED.png
+- name: remastered/obj/P_EX120_NPC_GREEN.mdlx/-0.dds
+  method: copy
+  source:
+  - name: Texture/KH1/GREEN.png
+- name: remastered/obj/P_EX120.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX120_NPC_BLUE.mdlx/-1.dds
+  - name: remastered/obj/P_EX120_NPC_RED.mdlx/-1.dds
+  - name: remastered/obj/P_EX120_NPC_GREEN.mdlx/-1.dds
+  - name: remastered/obj/H_EX790.mdlx/-1.dds
+  method: copy
+  source:
+  - name: Texture/KH1/2.png
+- name: remastered/obj/P_EX120.mdlx/-2.dds
+  multi:
+  - name: remastered/obj/P_EX120_NPC_BLUE.mdlx/-2.dds
+  - name: remastered/obj/P_EX120_NPC_RED.mdlx/-2.dds
+  - name: remastered/obj/P_EX120_NPC_GREEN.mdlx/-2.dds
+  - name: remastered/obj/H_EX790.mdlx/-2.dds
+  method: copy
+  source:
+  - name: Texture/KH1/3.png
+# KH2 Sora textures
+- name: remastered/obj/P_EX100.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/P_EX100_AL_CARPET.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_MEMO.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_NPC.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_SIDECAR.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_NM.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_WI.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TR.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_XM.mdlx/-0.dds
+  - name: remastered/obj/H_EX500.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_NM.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_TR.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_WI.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_XM.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_BTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_NM_BTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_WI_BTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TR_BTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_XM_BTLF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_BTLF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_NM_BTLF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_TR_BTLF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_WI_BTLF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_XM_BTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_MAGF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_NM_MAGF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_WI_MAGF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TR_MAGF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_XM_MAGF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_MAGF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_NM_MAGF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_TR_MAGF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_WI_MAGF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_XM_MAGF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TRIF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_NM_TRIF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_WI_TRIF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TR_TRIF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_XM_TRIF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_TRIF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_NM_TRIF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_TR_TRIF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_WI_TRIF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_WI_TRIF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_ULTF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_NM_ULTF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_WI_ULTF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TR_ULTF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_XM_ULTF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_ULTF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_NM_ULTF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_TR_ULTF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_WI_ULTF.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_XM_ULTF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_KH1F.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_NM_KH1F.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_WI_KH1F.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TR_KH1F.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_XM_KH1F.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_KH1F.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_NM_KH1F.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_TR_KH1F.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_WI_KH1F.mdlx/-0.dds
+  - name: remastered/obj/H_EX500_XM_KH1F.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_HTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_NM_HTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_WI_HTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_TR_HTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_XM_HTLF.mdlx/-0.dds
+  - name: remastered/obj/P_EX100_HTLF_BTL.mdlx/-0.dds
+  method: copy
+  source:
+  - name: Texture/KH2/1.png
+- name: remastered/obj/P_EX100.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX100_AL_CARPET.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_MEMO.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_NPC.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_SIDECAR.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_NM.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_WI.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_TR.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_XM.mdlx/-1.dds
+  - name: remastered/obj/H_EX500.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_NM.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_TR.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_WI.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_XM.mdlx/-1.dds
+  method: copy
+  source:
+  - name: Texture/KH2/2.png
+- name: remastered/obj/P_EX100.mdlx/-2.dds
+  multi:
+  - name: remastered/obj/P_EX100_AL_CARPET.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_MEMO.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_NPC.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_SIDECAR.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_NM.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_WI.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_TR.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_XM.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_BTLF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_NM_BTLF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_WI_BTLF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_TR_BTLF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_XM_BTLF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_MAGF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_NM_MAGF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_WI_MAGF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_TR_MAGF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_XM_MAGF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_TRIF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_NM_TRIF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_WI_TRIF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_TR_TRIF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_XM_TRIF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_ULTF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_NM_ULTF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_WI_ULTF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_TR_ULTF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_XM_ULTF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_KH1F.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_NM_KH1F.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_WI_KH1F.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_TR_KH1F.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_XM_KH1F.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_HTLF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_NM_HTLF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_WI_HTLF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_TR_HTLF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_XM_HTLF.mdlx/-2.dds
+  - name: remastered/obj/P_EX100_HTLF_BTL.mdlx/-2.dds
+  method: copy
+  source:
+  - name: Texture/KH2/3.png
+- name: remastered/obj/P_EX100.mdlx/-3.dds
+  multi:
+  - name: remastered/obj/P_EX100_AL_CARPET.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_MEMO.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_NPC.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_SIDECAR.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_NM.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_WI.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_TR.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_XM.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_BTLF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_NM_BTLF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_WI_BTLF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_TR_BTLF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_XM_BTLF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_MAGF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_NM_MAGF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_WI_MAGF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_TR_MAGF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_XM_MAGF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_TRIF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_NM_TRIF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_WI_TRIF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_TR_TRIF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_XM_TRIF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_ULTF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_NM_ULTF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_WI_ULTF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_TR_ULTF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_XM_ULTF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_KH1F.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_NM_KH1F.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_WI_KH1F.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_TR_KH1F.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_XM_KH1F.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_HTLF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_NM_HTLF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_WI_HTLF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_TR_HTLF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_XM_HTLF.mdlx/-3.dds
+  - name: remastered/obj/P_EX100_HTLF_BTL.mdlx/-3.dds
+  method: copy
+  source:
+  - name: Texture/KH2/4.png
+# Drive form textures
+# Valor Form
+- name: remastered/obj/P_EX100_BTLF.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_BTLF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_WI_BTLF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_TR_BTLF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_XM_BTLF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_BTLF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_NM_BTLF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_TR_BTLF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_WI_BTLF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_XM_BTLF.mdlx/-1.dds
+  method: copy
+  source:
+  - name: Texture/KH2/Valor.png
+# Wisdom Form
+- name: remastered/obj/P_EX100_MAGF.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_MAGF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_WI_MAGF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_TR_MAGF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_XM_MAGF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_MAGF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_NM_MAGF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_TR_MAGF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_WI_MAGF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_XM_MAGF.mdlx/-1.dds
+  method: copy
+  source:
+  - name: Texture/KH2/Wisdom.png
+# Master Form
+- name: remastered/obj/P_EX100_TRIF.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_TRIF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_WI_TRIF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_TR_TRIF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_XM_TRIF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_TRIF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_NM_TRIF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_TR_TRIF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_WI_TRIF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_WI_TRIF.mdlx/-1.dds
+  method: copy
+  source:
+  - name: Texture/KH2/Master.png
+# Final Form
+- name: remastered/obj/P_EX100_ULTF.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_ULTF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_WI_ULTF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_TR_ULTF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_XM_ULTF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_ULTF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_NM_ULTF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_TR_ULTF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_WI_ULTF.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_XM_ULTF.mdlx/-1.dds
+  method: copy
+  source:
+  - name: Texture/KH2/Final.png
+# Limit Form
+- name: remastered/obj/P_EX100_KH1F.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_KH1F.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_WI_KH1F.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_TR_KH1F.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_XM_KH1F.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_KH1F.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_NM_KH1F.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_TR_KH1F.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_WI_KH1F.mdlx/-1.dds
+  - name: remastered/obj/H_EX500_XM_KH1F.mdlx/-1.dds
+  method: copy
+  source:
+  - name: Texture/KH2/Limit.png
+# Anti Form
+- name: remastered/obj/P_EX100_HTLF.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/P_EX100_NM_HTLF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_WI_HTLF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_TR_HTLF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_XM_HTLF.mdlx/-1.dds
+  - name: remastered/obj/P_EX100_HTLF_BTL.mdlx/-1.dds
+  method: copy
+  source:
+  - name: Texture/KH2/Anti.png
+# Pridelands textures
+- name: remastered/obj/P_LK100.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/H_EX640.mdlx/-0.dds
+  method: copy
+  source:
+  - name: Texture/PL/1.png
+# Atlantica textures
+- name: remastered/obj/P_LM100.mdlx/-0.dds
+  multi:
+  - name: remastered/obj/H_EX630.mdlx/-0.dds
+  method: copy
+  source:
+  - name: Texture/AT/1.png
+- name: remastered/obj/P_LM100.mdlx/-1.dds
+  multi:
+  - name: remastered/obj/H_EX630.mdlx/-1.dds
+  method: copy
+  source:
+  - name: Texture/AT/2.png
+- name: remastered/obj/P_LM100.mdlx/-2.dds
+  multi:
+  - name: remastered/obj/H_EX630.mdlx/-2.dds
+  method: copy
+  source:
+  - name: Texture/AT/3.png
+# HUD textures
+- name: remastered/obj/P_EX100.a.us/-8.dds
+  multi:
+  - name: remastered/obj/P_EX100_AL_CARPET.a.us/-8.dds
+  - name: remastered/obj/AL14_PLAYER.a.us/-8.dds
+  - name: remastered/obj/P_EX100_BTLF.a.us/-4.dds
+  - name: remastered/obj/P_EX100_HTLF.a.us/-3.dds
+  - name: remastered/obj/P_EX100_KH1F.a.us/-9.dds
+  - name: remastered/obj/P_EX100_MAGF.a.us/-2.dds
+  - name: remastered/obj/P_EX100_TRIF.a.us/-5.dds
+  - name: remastered/obj/P_EX100_ULTF.a.us/-10.dds
+  - name: remastered/obj/P_EX100_NM.a.us/-8.dds
+  - name: remastered/obj/P_EX100_NM_BTLF.a.us/-4.dds
+  - name: remastered/obj/P_EX100_NM_KH1F.a.us/-9.dds
+  - name: remastered/obj/P_EX100_NM_MAGF.a.us/-2.dds
+  - name: remastered/obj/P_EX100_NM_TRIF.a.us/-5.dds
+  - name: remastered/obj/P_EX100_NM_ULTF.a.us/-10.dds
+  - name: remastered/obj/P_EX100_NM_HTLF.a.us/-3.dds
+  - name: remastered/obj/P_EX120.a.us/-8.dds
+  - name: remastered/obj/PO07_PLAYER.a.us/-0.dds
+  - name: remastered/obj/PO08_PLAYER.a.us/-0.dds
+  - name: remastered/obj/P_EX100_SIDECAR.a.us/-8.png
+  - name: remastered/obj/P_LM100.a.us/-0.dds
+  method: copy
+  source:
+  - name: HUD/Base.png
+- name: remastered/obj/P_EX100_TR.a.us/-8.dds
+  multi:
+  - name: remastered/obj/P_EX100_TR_BTLF.a.us/-4.dds
+  - name: remastered/obj/P_EX100_TR_HTLF.a.us/-3.dds
+  - name: remastered/obj/P_EX100_TR_KH1F.a.us/-9.dds
+  - name: remastered/obj/P_EX100_TR_MAGF.a.us/-2.dds
+  - name: remastered/obj/P_EX100_TR_TRIF.a.us/-5.dds
+  - name: remastered/obj/P_EX100_TR_ULTF.a.us/-10.dds
+  - name: remastered/obj/P_EX100_TR_LIGHTCYCLE.a.us/-8.png
+  method: copy
+  source:
+  - name: HUD/TR.png
+- name: remastered/obj/P_EX100_WI.a.us/-8.dds
+  multi:
+  - name: remastered/obj/P_EX100_WI_BTLF.a.us/-4.dds
+  - name: remastered/obj/P_EX100_WI_HTLF.a.us/-3.dds
+  - name: remastered/obj/P_EX100_WI_KH1F.a.us/-9.dds
+  - name: remastered/obj/P_EX100_WI_MAGF.a.us/-2.dds
+  - name: remastered/obj/P_EX100_WI_TRIF.a.us/-5.dds
+  - name: remastered/obj/P_EX100_WI_ULTF.a.us/-10.dds
+  method: copy
+  source:
+  - name: HUD/WI.png
+- name: remastered/obj/P_EX100_XM.a.us/-8.dds
+  multi:
+  - name: remastered/obj/P_EX100_XM_BTLF.a.us/-4.dds
+  - name: remastered/obj/P_EX100_XM_HTLF.a.us/-3.dds
+  - name: remastered/obj/P_EX100_XM_KH1F.a.us/-9.dds
+  - name: remastered/obj/P_EX100_XM_MAGF.a.us/-2.dds
+  - name: remastered/obj/P_EX100_XM_TRIF.a.us/-5.dds
+  - name: remastered/obj/P_EX100_XM_ULTF.a.us/-10.dds
+  method: copy
+  source:
+  - name: HUD/XM.png
+- name: remastered/obj/P_LK100.a.us/-5.dds
+  method: copy
+  source:
+  - name: HUD/LK.png
+# Shopface textures
+# Shoutouts to topaz
+- name: remastered/menu/shopface/p_ex100.bin/-0.dds
+  multi:
+  - name: remastered/menu/shopface/p_ex100_10.bin/-0.dds
+  - name: remastered/menu/shopface/p_ex100_20.bin/-0.dds
+  - name: remastered/menu/shopface/p_ex100_30.bin/-0.dds
+  - name: remastered/menu/shopface/p_ex120.bin/-0.dds
+  - name: remastered/menu/shopface/p_xm100.bin/-0.dds
+  method: copy
+  source:
+  - name: HUD/Shop.png
+- name: remastered/menu/shopface/p_lk100.bin/-0.dds
+  method: copy
+  source:
+  - name: HUD/PL_Shop.png
+# Card and Dice things
+- name: remastered/obj/M_EX950_CARD.mdlx/-0.dds
+  method: copy
+  source:
+  - name: Texture/Flat/Card.dds
+- name: remastered/obj/M_EX950_DICE.mdlx/-0.dds
+  method: copy
+  source:
+  - name: Texture/Flat/Dice.dds
+- name: remastered/obj/M_EX950_CARD.a.us/-4.dds
+  method: copy
+  source:
+  - name: HUD/Card.png
+- name: remastered/obj/M_EX950_DICE.a.us/-3.dds
+  method: copy
+  source:
+  - name: HUD/Dice.png
+# Voice
+- name: voice/us/battle/wi0_sora.win32.scd
+  multi:
+  - name: voice/us/battle/tt0_sora.win32.scd
+  - name: voice/us/battle/tr0_sora.win32.scd
+  - name: voice/us/battle/po0_sora.win32.scd
+  - name: voice/us/battle/nm0_sora.win32.scd
+  - name: voice/us/battle/mu0_sora.win32.scd
+  - name: voice/us/battle/lm0_sora.win32.scd
+  - name: voice/us/battle/lk0_sora.win32.scd
+  - name: voice/us/battle/he0_sora.win32.scd
+  - name: voice/us/battle/hb0_sora.win32.scd
+  - name: voice/us/battle/eh0_sora.win32.scd
+  - name: voice/us/battle/dc0_sora.win32.scd
+  - name: voice/us/battle/ca0_sora.win32.scd
+  - name: voice/us/battle/bb0_sora.win32.scd
+  - name: voice/us/battle/al0_sora.win32.scd
+  method: copy
+  source:
+  - name: Voice/Yshtola.scd
