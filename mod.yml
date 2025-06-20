@@ -649,3 +649,21 @@ assets:
   method: copy
   source:
   - name: Voice/Yshtola.scd
+# Ending picture
+- name: remastered/menu/us/ending.2ld/US_ending_2ld2.png
+  platform: pc
+  multi:
+  - name: remastered/menu/us/ending.2ld/US_ending_2ld3.png
+  - name: remastered/menu/us/ending.2ld/US_ending_2ld4.png
+  - name: remastered/menu/us/ending.2ld/US_ending_2ld5.png
+  method: copy
+  source:
+  - name: End/1.png
+- name: remastered/menu/us/ending.2ld/US_ending_2ld6.png
+  method: copy
+  source:
+  - name: End/2.png
+- name: remastered/menu/us/ending.2ld/US_ending_2ld7.png
+  method: copy
+  source:
+  - name: End/3.png

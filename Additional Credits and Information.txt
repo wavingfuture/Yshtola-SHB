@@ -6,4 +6,8 @@ Big thanks to the OpenKH discord community for helping me out of a few roadblock
 
 ---
 
+If you want to change the end images around, just rename the files in /End/. 1.png is beginner/standard/proud, 2.png is critical mode, 3.png is critical mode with 100% journal.
+
+---
+
 I never want to rig a skirt ever again.
